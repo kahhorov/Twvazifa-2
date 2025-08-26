@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/heebo-v27-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* heebo-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/heebo-v27-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* heebo-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/heebo-v27-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  body {
+    @apply text-dark text-[16px] font-normal;
+  }
+}
+@theme {
+  --color-dark: #21243d;
+  --color-primary: #ff6464;
+  --color-aqua: #edf7fa;
+  --color-secodry: #00a8cc;
+  --color-light: #8695a4;
+  --color-dark-blue: #142850;
+
+  /* fonts */
+  --default-font-family: "Heebo", "Areal", sans-serif;
+
+  /* shadow */
+  --shadow-herro: -3.5px 10px 0px 0px #edf7fa;
+  /* border */
+}
+@layer components {
+  .containers {
+    width: 100%;
+    max-width: 1250px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
